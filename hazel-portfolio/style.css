@@ -197,6 +197,7 @@ body {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    object-fit: contain;
   }
 
   .char{
@@ -288,3 +289,68 @@ body {
   .social-icons{
     color: #fff;
   }
+
+  .carousel-item {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .socialCarousel .carousel-item {
+    height: 600px;
+    
+    justify-content: center;
+    align-items: center;
+  }
+
+  .socialCarousel .carousel-item img {
+    object-fit: cover;
+    height: 600px;
+   
+  }
+
+  .workingCarousel .carousel-item {
+    height: 70%;
+    ;
+    
+    justify-content: center;
+    align-items: center;
+  }
+
+  .workingCarousel .carousel-item img {
+    object-fit: cover;
+    height: 70%;
+   
+  }
+
+  
+
+  .journey-section .carousel-item {
+    height: 300px; /* Adjust as needed */
+    
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .working-section .carousel-item {
+    height: 70%; /* Adjust as needed */
+    
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-section .carousel-item{
+    height: 600px; /* Adjust as needed */
+    
+    justify-content: center;
+    align-items: center;
+  }
+
+
