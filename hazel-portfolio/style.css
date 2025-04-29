@@ -1,0 +1,290 @@
+/* Import Koulen Font */
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+/* Use Koulen font */
+.font-koulen {
+  font-family: 'Koulen', sans-serif;
+}
+
+/* Background Setup for Navbar and Hero */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('assets/background.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.main-container{
+    width: 100%;
+}
+
+.navbar-transparent {
+    background-color: #800000;
+    z-index: 10;
+  }
+  
+  .nav-opt {
+    color: #fff !important;
+    font-size: 30px;
+    font-family: 'Koulen', sans-serif;
+    text-decoration: none;
+  }
+  
+  .nav-links-wrapper {
+    gap: 200px; /* Equal space between all links and logo */
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+  }
+  .navbar-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+/* Hero Section Styling */
+.hero-section {
+  position: relative;
+  margin-top: 10px; /* Pushes down the hero to avoid overlap with the navbar */
+  overflow: visible;
+}
+
+.hero-bg {
+  max-height: 800px;
+  object-fit: cover;
+  width: 100%;
+  /* border: #000 2px solid; */
+ 
+}
+
+.hero-text {
+  z-index: 2;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+  /* border: #000 2px solid; */
+  padding-left: 190px;
+  width: 70%;
+  margin-top: -90px;
+  padding: 0;
+  height: fit-content;
+  
+}
+
+.top-text{
+    font-size: 150px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 120px;
+    padding: 0;
+}
+.bot-text{
+    font-size: 355px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -90px;
+    padding: 0;
+    
+}
+
+.name-text{
+    font-size: 42px;
+    text-align: left;
+    /* border: 2px solid #000; */
+    width: 100%;
+    padding-left: 20px;
+    position:absolute;  
+    top: 85%;
+}
+
+.hazel-img {
+    height: 650px;
+    width: auto; /* This keeps the correct width proportion */
+    bottom: -50px;
+    z-index: 3;
+    position: absolute;
+    padding-top: 30px;
+    /* border: 2px solid #000; */
+    left: 50%;
+    transform: translateX(-50%); /* Make sure it's centered properly */
+  }
+  
+  .white-gradient-img {
+    width: 100%;
+    /* Adjust based on design */
+    height: auto;
+    top: 70%; /* Adjust position as needed */
+    z-index: 5; /* must be UNDER Hazel but ABOVE background */
+    transform: translateX(-50%);
+  }
+  
+  .journey-section {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: 'Koulen', sans-serif;
+    margin-top: 140px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-header {
+    color: #000;
+    font-size: 30px;
+    font-family: 'Adamina', serif; /* apply Adamina font */
+  }
+  
+  .bot-header {
+    color: #800000;
+    font-size: 150px;
+  }
+
+  .carousel-wrapper {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+
+  .row {
+    width: 100%;
+    max-width: 1200px; /* Keeps content centered and limits stretch */
+    margin: 0 auto;
+  }
+  
+  .text-col {
+    text-align: left;
+    padding-left: 2rem; /* Replace hardcoded 90px */
+    align-self: flex-start;
+  }
+  
+  .text-head{
+    color: #800000;
+    font-size: 30px;
+    
+  }
+
+  .text-sub{
+    color: #000;
+    font-size: 20px;
+    font-family: 'Adamina', serif; /* apply Adamina font */
+  }
+
+  .social-section {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: 'Koulen', sans-serif;
+    margin-top: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #800000;
+    padding: 50px;
+  }
+  
+  .social-top {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Adamina', serif; /* apply Adamina font */
+  }
+  
+  .social-bot {
+    color: #fff;
+    font-size: 150px;
+  }
+
+  .social-carousel-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .char{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Adamina', serif; /* apply Adamina font */
+    margin-top: -10px;
+  }
+
+  .working-section {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: 'Koulen', sans-serif;
+    margin-top: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px;
+  }
+  
+  .working-top {
+    color: #000;
+    font-size: 30px;
+    font-family: 'Adamina', serif; /* apply Adamina font */
+  }
+  
+  .working-bot {
+    color: #800000;
+    font-size: 150px;
+  }
+
+  .working-carousel-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .awards-section {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: 'Koulen', sans-serif;
+    margin-top: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px;
+  }
+  
+  .awards-top {
+    color: #000;
+    font-size: 30px;
+    font-family: 'Adamina', serif; /* apply Adamina font */
+  }
+  
+  .awards-bot {
+    color: #800000;
+    font-size: 150px;
+  }
+
+  .awards-caption {
+    color: #000;
+    font-size: 20px;
+    font-family: 'Adamina', serif; /* apply Adamina font */
+    margin-top: 20px;
+  }
+
+  .award-row{
+    width: 100%;
+    max-width: 1200px; /* Keeps content centered and limits stretch */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .footer-container{
+    background-color: #800000;
+    color: #fff;
+    text-align: center;
+  }
+
+  .social-icons{
+    color: #fff;
+  }
