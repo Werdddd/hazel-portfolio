@@ -17,27 +17,55 @@ body {
 .main-container{
     width: 100%;
 }
-
 .navbar-transparent {
-    background-color: #800000;
-    z-index: 10;
-  }
-  
-  .nav-opt {
-    color: #fff !important;
-    font-size: 30px;
-    font-family: 'Koulen', sans-serif;
-    text-decoration: none;
-  }
-  
-  .nav-links-wrapper {
-    gap: 200px; /* Equal space between all links and logo */
-    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
-  }
-  .navbar-shadow {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease-in-out;
-  }
+  background-color: #800000;
+  z-index: 10;
+}
+
+.nav-opt {
+  color: #fff !important;
+  font-size: 20px; /* Adjusted font size for better fit */
+  font-family: 'Koulen', sans-serif;
+  text-decoration: none;
+}
+
+.nav-links-wrapper {
+  display: flex;  /* Ensures items are in a row */
+  justify-content: space-between; /* Distributes items evenly */
+  align-items: center; /* Aligns items vertically */
+  width: 100%;
+  gap: 30px; /* Adjust gap between items */
+  flex-wrap: nowrap; /* Prevents wrapping */
+  overflow: hidden; /* Hides any overflow that doesn't fit */
+}
+
+.nav-opt {
+  color: #fff !important;
+  font-size: 20px; 
+  font-family: 'Koulen', sans-serif;
+  text-decoration: none;
+  position: relative; /* For positioning the underline */
+}
+
+.nav-opt.active {
+  border-bottom: 3px solid #fff; /* Adds the underline */
+  padding-bottom: 5px; /* Adjusts space between the text and underline */
+}
+
+.nav-links-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.navbar-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
 
 /* Hero Section Styling */
 .hero-section {
@@ -173,13 +201,13 @@ body {
     height: auto;
     text-align: center;
     font-family: 'Koulen', sans-serif;
-    margin-top: 10px;
+    
     z-index: 10;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #800000;
-    padding: 50px;
+    padding: 40px;
   }
   
   .social-top {
@@ -194,6 +222,40 @@ body {
   }
 
   .social-carousel-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+
+  
+  .classes-section {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: 'Koulen', sans-serif;
+    margin-top: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px;
+  }
+  
+  .classes-top {
+    color: #000;
+    font-size: 30px;
+    font-family: 'Adamina', serif; /* apply Adamina font */
+  }
+  
+  .classes-bot {
+    color: #800000;
+    font-size: 110px;
+  }
+
+  .classes-carousel-wrapper {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
@@ -263,11 +325,46 @@ body {
     font-size: 150px;
   }
 
+  .prof-bot {
+    color: #800000;
+    font-size: 110px;
+  }
+
+  .prof-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .prof-pic {
+    width: 100%;          /* Ensures images take up full width of the container */
+    height: auto;         /* Maintains aspect ratio of images */
+    object-fit: cover;    /* Ensures the image covers the area without distortion */
+    max-height: 300px;    /* Set a max height for images */
+    border-radius: 12px;  /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adding a subtle shadow for a neat effect */
+  }
+
   .awards-caption {
     color: #000;
     font-size: 20px;
     font-family: 'Adamina', serif; /* apply Adamina font */
     margin-top: 20px;
+  }
+
+  .prof-name {
+    color: #000;
+    font-size: 24px;
+    font-family: 'Adamina', serif; /* apply Adamina font */
+    margin-top: 30px;
+  }
+
+  .prof-caption {
+    color: #000;
+    font-size: 18px;
+    font-family: 'Adamina', serif; /* apply Adamina font */
+    margin-top: 10px;
+    text-align: justify;
   }
 
   .award-row{
@@ -287,6 +384,11 @@ body {
   }
 
   .social-icons{
+    color: #fff;
+  }
+
+  
+  .classes-icons{
     color: #fff;
   }
 
@@ -310,6 +412,20 @@ body {
   }
 
   .socialCarousel .carousel-item img {
+    object-fit: cover;
+    height: 600px;
+   
+  }
+
+  
+  .classesCarousel .carousel-item {
+    height: 600px;
+    
+    justify-content: center;
+    align-items: center;
+  }
+
+  .classesCarousel .carousel-item img {
     object-fit: cover;
     height: 600px;
    
@@ -353,4 +469,111 @@ body {
     align-items: center;
   }
 
+
+  .classes-section .carousel-item{
+    height: 600px; /* Adjust as needed */
+    
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+  }
+  
+  .photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .photo-grid img:hover {
+    transform: scale(1.03);
+  }
+
+.card-section {
+ 
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Georgia', serif;
+}
+
+.card-container {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  overflow: hidden;
+  box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: 2px solid #800000;
+  border-radius: 12px;
+  box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.2); /* Increased shadow for more depth */
+  padding: 40px 30px;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  pointer-events: none;
+}
+
+
+.card.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.card.prev {
+  transform: translateX(-100%);
+}
+
+.card.next {
+  transform: translateX(100%);
+}
+
+.card p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #800000;
+  text-indent: 2em;
+  text-align: justify;
+}
+
+
+/* Button container */
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Button styles */
+.prev-btn, .next-btn {
+  padding: 10px 20px;
+  background-color: #800000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Georgia', serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: #dc0b0b;
+}
 

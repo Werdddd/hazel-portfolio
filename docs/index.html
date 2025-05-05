@@ -1,631 +1,546 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hazel's Portfolio</title>
-    <link rel="icon" href="assets/puplogo.svg" type="image/png" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hazel's Portfolio</title>
+  <link rel="icon" href="assets/puplogo.svg" type="image/png" />
 
-    <!-- Google Fonts: Koulen -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Koulen&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Adamina&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Google Fonts: Koulen -->
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet" />
 
-    <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
+  <link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="main-container font-koulen text-white">
-    <nav class="navbar navbar-expand-lg py-3 navbar-transparent fixed-top">
-      <div class="container d-flex justify-content-between align-items-center">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="main-container font-koulen text-white">
+  <nav class="navbar navbar-expand-lg py-3 navbar-transparent fixed-top">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <!-- All Links in One Flex Container -->
+      <div class="d-flex align-items-center justify-content-center w-100 gap-7 nav-links-wrapper">
+        <a class="nav-link text-white nav-opt" href="#beginning">Beginning</a>
+        <a class="nav-link text-white nav-opt" href="#classes">Classes</a>
+        <a class="nav-link text-white nav-opt" href="#extra-curricular">Beyond Class</a>
+        <a class="nav-link text-white nav-opt" href="#social">Social</a>
+
         
-        <!-- All Links in One Flex Container -->
-        <div class="d-flex align-items-center justify-content-center w-100 gap-7 nav-links-wrapper">
-          <a class="nav-link text-white nav-opt" href="#journey">Journey</a>
-          <a class="nav-link text-white nav-opt" href="#social">Social</a>
-      
-    
-          <!-- Center Logo -->
-          <a href="#home">
-            <img src="assets/puplogo.svg" alt="Logo" height="50" />
-          </a>
-          <a class="nav-link text-white nav-opt" href="#working">Working</a>
-          <a class="nav-link text-white nav-opt" href="#awards">Achievements</a>
-        </div>
+        <!-- Center Logo -->
+        <a href="#home">
+          <img src="assets/puplogo.svg" alt="Logo" height="50" />
+        </a>
+        <a class="nav-link text-white nav-opt" href="#working">Working</a>
+        <a class="nav-link text-white nav-opt" href="#awards">Achievements</a>
+        <a class="nav-link text-white nav-opt" href="#prof">Professors</a>
+        <a class="nav-link text-white nav-opt" href="#story">Story</a>
       </div>
-    </nav>
-    
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section position-relative text-center" id="home">
-      <!-- Background -->
-      <img src="assets/firstbg.png" class="w-100 hero-bg" alt="Background" />
 
-      <!-- Overlay Text -->
-      <div class="hero-text position-absolute top-50 start-50 translate-middle">
-        <h1 class="top-text display-5">KEEPING UP WITH THE</h1>
-        <h1 class="bot-text display-1">ISKA LIFE</h1>
-        <p class="name-text mt-3">HAZEL ANNE MIRANDA</p>
-      </div>
+  <!-- Hero Section -->
+  <section class="hero-section position-relative text-center" id="home">
+    <!-- Background -->
+    <img src="assets/firstbg.png" class="w-100 hero-bg" alt="Background" />
 
-      <!-- White Gradient Image -->
-      <img
-        src="assets/white-gradient.png"
-        alt="White Gradient"
-        class="white-gradient-img position-absolute start-50 translate-middle-x"
-      />
+    <!-- Overlay Text -->
+    <div class="hero-text position-absolute top-50 start-50 translate-middle">
+      <h1 class="top-text display-5">KEEPING UP WITH THE</h1>
+      <h1 class="bot-text display-1">ISKA LIFE</h1>
+      <p class="name-text mt-3">HAZEL ANNE MIRANDA</p>
+    </div>
 
-      <!-- Hazel Image -->
-      <img
-        src="assets/hazelpicc.png"
-        alt="Hazel"
-        class="hazel-img position-absolute start-50 translate-middle-x"
-      />
-    </section>
+    <!-- White Gradient Image -->
+    <img src="assets/white-gradient.png" alt="White Gradient"
+      class="white-gradient-img position-absolute start-50 translate-middle-x" />
 
-    <!-- Journey Section -->
-    <section class="journey-section  justify-content-center container" id="journey">
-      <h1 class="top-header">This is not your typical college journey;</h1>
-      <h1 class="bot-header">this is the Iska way.</h1>
+    <!-- Hazel Image -->
+    <img src="assets/hazelpicc.png" alt="Hazel" class="hazel-img position-absolute start-50 translate-middle-x" />
+  </section>
 
-      <!-- New Row -->
-      <div class="row  mt-5 mb-5">
-        <!-- Left Text -->
-        <div class="text-col col-md-6 mb-4 mb-md-0">
-          <h3 class="text-head">BEGINNINGS</h3>
-          <p class="text-sub">
-            This year marks the start of my academic and personal
-            journey—embracing new challenges, meeting new people, and
-            discovering the true meaning of being an Iska.
-          </p>
-        </div>
+  <!-- Journey Section -->
+  <section class="journey-section  justify-content-center container" id="beginning">
+    <h1 class="top-header mt-4">Not luck. Not privilege. Just pure persistence—</h1>
+    <h1 class="bot-header">Iska’s first fight.</h1>
 
-        <!-- Right Carousel -->
-        <div class="col-md-6">
-          <div class="carousel-wrapper mx-auto">
-            <div id="journeyCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner rounded shadow">
-              <div class="carousel-item active">
-                <img
-                  src="assets/1st-yr3.jpg"
-                  class="d-block w-100"
-                  alt="First Slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/1st-yr1.jpg"
-                  class="d-block w-100"
-                  alt="Second Slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/1st-yr2.jpg"
-                  class="d-block w-100"
-                  alt="Third Slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/1st-yr4.jpg"
-                  class="d-block w-100"
-                  alt="Fourth Slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/1st-yr5.jpg"
-                  class="d-block w-100"
-                  alt="Fourth Slide"
-                />
-              </div>
-            </div>
-
-            <!-- Controls -->
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#journeyCarousel"
-              data-bs-slide="prev"
-            >
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#journeyCarousel"
-              data-bs-slide="next"
-            >
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </div>
+    <!-- New Row -->
+    <div class="row  mt-5 mb-5">
+      <!-- Left Text -->
+      <div class="text-col col-md-6 mb-4 mb-md-0">
+        <h3 class="text-head">APPLICATION TO PUP</h3>
+        <p class="text-sub">
+          I chose PUP because it offers quality education that is accessible and affordable. As a state university, it
+          provides opportunities for students like me to pursue higher education without the heavy financial burden. PUP
+          also has a strong reputation for producing competent and socially aware graduates, which aligns with my
+          personal values and goals. I admire the university’s commitment to public service, academic excellence, and
+          student empowerment.
+        </p>
       </div>
 
-      <!-- New Row -->
-      <div class="row  mt-5 mb-5">
-        
-
-        <!-- Right Carousel -->
-        <div class="col-md-6">
-          <div class="carousel-wrapper mx-auto">
-            <div id="journeyCarousel2" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner rounded shadow">
-              <div class="carousel-item active">
-                <img
-                  src="assets/2nd-yr1.jpg"
-                  class="d-block w-100"
-                  alt="First Slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/2nd-yr2.jpg"
-                  class="d-block w-100"
-                  alt="Second Slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/2nd-yr3.jpg"
-                  class="d-block w-100"
-                  alt="Third Slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/2nd-yr4.jpg"
-                  class="d-block w-100"
-                  alt="Third Slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/2nd-yr5.jpg"
-                  class="d-block w-100"
-                  alt="Third Slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/2nd-yr6.jpg"
-                  class="d-block w-100"
-                  alt="Third Slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/2nd-yr7.jpg"
-                  class="d-block w-100"
-                  alt="Third Slide"
-                />
-              </div>
-            </div>
-
-            <!-- Controls -->
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#journeyCarousel2"
-              data-bs-slide="prev"
-            >
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#journeyCarousel2"
-              data-bs-slide="next"
-            >
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </div>
+      <div class="col-md-6 d-flex gap-3 justify-content-center mb-5">
+        <img src="assets/apply.jpg" class="img-fluid rounded shadow" style="max-width: 48%; object-fit: cover;"
+          alt="Portrait 1" />
+        <img src="assets/apply1.jpg" class="img-fluid rounded shadow" style="max-width: 48%; object-fit: cover;"
+          alt="Portrait 2" />
       </div>
+
+      <!-- One Landscape Image -->
+      <div class="col-md-6 d-flex justify-content-center">
+        <img src="assets/award2.jpg" class="img-fluid rounded shadow"
+          style="width: 100%; max-height: 400px; object-fit: cover;" alt="Landscape Image" />
+      </div>
+
 
       <!-- Left Text -->
       <div class="text-col col-md-6 mb-4 mb-md-0">
-        <h3 class="text-head">GROWTH</h3>
+        <h3 class="text-head">ENROLLMENT</h3>
         <p class="text-sub">
-          In my second year, I began to expand my horizons, tackling more complex subjects while balancing academics with extracurriculars and work—shaping my skills and resilience.
+          Passing and enrolling at PUP wasn’t just a personal victory—it was a turning point. In a country where access
+          to quality education often feels like a privilege, earning my spot at PUP reminded me that dreams are valid,
+          even when the odds feel stacked against you. It wasn’t just about passing an entrance exam—it was about
+          proving to myself that I am capable, that I belong, and that my future is worth fighting for. As I walked
+          through the gates of the university for the first time, I didn’t just feel happiness—I felt purpose. I’m not
+          just here to study; I’m here to grow, to serve, and to become part of something bigger than myself.
         </p>
       </div>
-      
-      <!-- New Row -->
-      <div class="row  mt-5 mb-5">
-        <!-- Left Text -->
-        <div class="text-col col-md-6 mb-4 mb-md-0">
-          <h3 class="text-head">EVOLUTION</h3>
-          <p class="text-sub">
-            My third year has been about refining my skills, diving deeper into my field of study, and mastering the art of balancing work, study, and personal growth as I prepare for the future.
-          </p>
-        </div>
+  </section>
 
-        <!-- Right Carousel -->
-        <div class="col-md-6">
-          <div class="carousel-wrapper mx-auto">
-            <div id="journeyCarousel3" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner rounded shadow">
-              <div class="carousel-item active">
-                <img
-                  src="assets/3rd-yr1.jpg"
-                  class="d-block w-100"
-                  alt="First Slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/3rd-yr2.jpg"
-                  class="d-block w-100"
-                  alt="Second Slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/3rd-yr3.jpg"
-                  class="d-block w-100"
-                  alt="Third Slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/3rd-yr4.jpg"
-                  class="d-block w-100"
-                  alt="Third Slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/3rd-yr5.jpg"
-                  class="d-block w-100"
-                  alt="Third Slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/3rd-yr6.jpg"
-                  class="d-block w-100"
-                  alt="Third Slide"
-                />
-              </div>
-            </div>
+  <!-- Classes Section -->
+  <section class="classes-section  justify-content-center" id="classes">
+    <h1 class="classes-top">Not easy. Not instant.</h1>
+    <h1 class="classes-bot">This is late nights and early lectures. </h1>
+    <h1 class="char">char</h1>
 
-            <!-- Controls -->
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#journeyCarousel3"
-              data-bs-slide="prev"
-            >
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#journeyCarousel3"
-              data-bs-slide="next"
-            >
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- New Row -->
-      <div class="row  mt-5 mb-5">
-        
-
-        <!-- Right Carousel -->
-        <div class="col-md-6">
-          <div class="carousel-wrapper mx-auto">
-            <div id="journeyCarousel4" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner rounded shadow">
-              <div class="carousel-item active">
-                <img
-                  src="assets/4th-yr1.jpg"
-                  class="d-block w-100"
-                  alt="First Slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/4th-yr2.png"
-                  class="d-block w-100"
-                  alt="Second Slide"
-                />
-              </div>
-              
-            </div>
-
-            <!-- Controls -->
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#journeyCarousel4"
-              data-bs-slide="prev"
-            >
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#journeyCarousel4"
-              data-bs-slide="next"
-            >
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Left Text -->
-      <div class="text-col col-md-6 mb-4 mb-md-0">
-        <h3 class="text-head">REFINEMENT</h3>
-        <p class="text-sub">
-          As I look forward to my final year, the focus shifts to applying everything I’ve learned, preparing for post-graduation challenges, and shaping my next steps toward a fulfilling career.
-        </p>
-      </div>
-      
-    </section>
-
-    <!-- Social Section -->
-    <section class="social-section  justify-content-center" id="social">
-      <h1 class="social-top">We only have one mantra;</h1>
-      <h1 class="social-bot">you can’t sit with us.</h1>
-      <h1 class="char">char</h1>
-
-      <!-- New Row -->
-      <div class="row  mt-5 mb-5">
-        <div class="social-carousel-wrapper mx-auto">
-          <div id="socialCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner rounded shadow">
+    <!-- New Row -->
+    <div class="row  mt-5 mb-5">
+      <div class="classes-carousel-wrapper mx-auto">
+        <div id="classesCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded shadow">
             <div class="carousel-item active">
-              <img
-                src="assets/social1.jpg"
-                class="d-block w-100"
-                alt="First Slide"
-              />
+              <img src="assets/class.jpg" class="d-block w-100" alt="First Slide" />
             </div>
             <div class="carousel-item">
-              <img
-                src="assets/firstpic.jpg"
-                class="d-block w-100"
-                alt="Second Slide"
-              />
+              <img src="assets/class1.jpg" class="d-block w-100" alt="Second Slide" />
             </div>
             <div class="carousel-item">
-              <img
-                src="assets/social2.jpg"
-                class="d-block w-100"
-                alt="Third Slide"
-              />
+              <img src="assets/class2.jpg" class="d-block w-100" alt="Third Slide" />
             </div>
             <div class="carousel-item">
-              <img
-                src="assets/social3.jpg"
-                class="d-block w-100"
-                alt="Third Slide"
-              />
+              <img src="assets/class3.jpg" class="d-block w-100" alt="Third Slide" />
             </div>
             <div class="carousel-item">
-              <img
-                src="assets/social4.jpg"
-                class="d-block w-100"
-                alt="Third Slide"
-              />
+              <img src="assets/class4.jpg" class="d-block w-100" alt="Third Slide" />
             </div>
             <div class="carousel-item">
-              <img
-                src="assets/social5.jpg"
-                class="d-block w-100"
-                alt="Third Slide"
-              />
+              <img src="assets/class5.jpg" class="d-block w-100" alt="Third Slide" />
             </div>
             <div class="carousel-item">
-              <img
-                src="assets/social6.jpg"
-                class="d-block w-100"
-                alt="Third Slide"
-              />
+              <img src="assets/class6.jpg" class="d-block w-100" alt="Third Slide" />
             </div>
             <div class="carousel-item">
-              <img
-                src="assets/social7.jpg"
-                class="d-block w-100"
-                alt="Third Slide"
-              />
+              <img src="assets/3rd-yr6.jpg" class="d-block w-100" alt="Third Slide" />
             </div>
-            <div class="carousel-item">
-              <img
-                src="assets/social8.jpg"
-                class="d-block w-100"
-                alt="Third Slide"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/social9.jpg"
-                class="d-block w-100"
-                alt="Third Slide"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/social10.jpg"
-                class="d-block w-100"
-                alt="Third Slide"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/3rd-yr3.jpg"
-                class="d-block w-100"
-                alt="Third Slide"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/3rd-yr6.jpg"
-                class="d-block w-100"
-                alt="Third Slide"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/2nd-yr4.jpg"
-                class="d-block w-100"
-                alt="Third Slide"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="assets/1st-yr5.jpg"
-                class="d-block w-100"
-                alt="Third Slide"
-              />
-            </div>
+
+
           </div>
 
           <!-- Controls -->
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#socialCarousel"
-            data-bs-slide="prev"
-          >
+          <button class="carousel-control-prev" type="button" data-bs-target="#classesCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
           </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#socialCarousel"
-            data-bs-slide="next"
-          >
+          <button class="carousel-control-next" type="button" data-bs-target="#classesCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
           </button>
         </div>
       </div>
-    </section>
+  </section>
 
-    <!-- Working Section -->
-    <section class="working-section  justify-content-center" id="working">
-      <h1 class="working-top">Enduring, this is the University Life</h1>
-      <h1 class="working-bot">unseen.</h1>
+  <!-- Extra-Curricular Section -->
+  <section class="social-section  justify-content-center" id="extra-curricular">
+    <h1 class="social-top">Purpose beyond the classroom—</h1>
+    <h1 class="social-bot">Iska living her life outside. </h1>
 
-      <!-- New Section -->
-      <div class="row mt-5 mb-5 gx-3">
-        <!-- Top row with 3 images -->
-        <div class="col-md-4 mb-3">
-          <img src="assets/working2.jpg" class="img-fluid rounded shadow" alt="Image 1" />
-        </div>
-        <div class="col-md-4 mb-3">
-          <video
-            class="w-100 rounded shadow"
-            autoplay
-            muted
-            loop
-            playsinline
-            style="height: 510px; object-fit: cover;"
-          >
-            <source src="assets/working6.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="col-md-4 mb-3">
-          <img src="assets/working4.jpg" class="img-fluid rounded shadow" alt="Image 3" />
-        </div>
 
-        <!-- Bottom row with full-width video -->
-        <div class="col-12">
-          <img src="assets/working3.jpg" class="img-fluid rounded shadow" alt="Image 3" />
+    <!-- New Grid Layout -->
+    <div class="container mt-5 mb-5">
+      <div class="photo-grid">
+        <img src="assets/social6.jpg" alt="Social 1" />
+        <img src="assets/firstpic.jpg" alt="First Pic" />
+        <img src="assets/social2.jpg" alt="Social 2" />
+        <img src="assets/social3.jpg" alt="Social 3" />
+        <img src="assets/social4.jpg" alt="Social 4" />
+        <img src="assets/social5.jpg" alt="Social 5" />
+        <img src="assets/social1.jpg" alt="Social 6" />
+        <img src="assets/social7.jpg" alt="Social 7" />
+        <img src="assets/social9.jpg" alt="Social 9" />
+        <img src="assets/3rd-yr3.jpg" alt="3rd Year 3" />
+        <img src="assets/extra1.jpg" alt="Social 9" />
+
+        <img src="assets/extra.jpg" alt="3rd Year 3" />
+        <img src="assets/extra2.jpg" alt="3rd Year 6" />
+        <img src="assets/2nd-yr4.jpg" alt="2nd Year 4" />
+        <img src="assets/1st-yr5.jpg" alt="1st Year 5" />
+        <img src="assets/social10.jpg" alt="Social 10" />
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Social Section -->
+  <section class="social-section  justify-content-center" id="social">
+    <h1 class="social-top">We only have one mantra;</h1>
+    <h1 class="social-bot">you can’t sit with us.</h1>
+    <h1 class="char">char</h1>
+
+    <!-- New Row -->
+    <div class="row  mt-5 mb-5">
+      <div class="social-carousel-wrapper mx-auto">
+        <div id="socialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded shadow">
+            <div class="carousel-item active">
+              <img src="assets/social1.jpg" class="d-block w-100" alt="First Slide" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/firstpic.jpg" class="d-block w-100" alt="Second Slide" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/social2.jpg" class="d-block w-100" alt="Third Slide" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/social3.jpg" class="d-block w-100" alt="Third Slide" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/social4.jpg" class="d-block w-100" alt="Third Slide" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/social5.jpg" class="d-block w-100" alt="Third Slide" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/social6.jpg" class="d-block w-100" alt="Third Slide" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/social7.jpg" class="d-block w-100" alt="Third Slide" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/social8.jpg" class="d-block w-100" alt="Third Slide" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/social9.jpg" class="d-block w-100" alt="Third Slide" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/social10.jpg" class="d-block w-100" alt="Third Slide" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/3rd-yr3.jpg" class="d-block w-100" alt="Third Slide" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/3rd-yr6.jpg" class="d-block w-100" alt="Third Slide" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/2nd-yr4.jpg" class="d-block w-100" alt="Third Slide" />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/1st-yr5.jpg" class="d-block w-100" alt="Third Slide" />
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#socialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#socialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
       </div>
+  </section>
 
-    </section>
+  <!-- Working Section -->
+  <section class="working-section  justify-content-center" id="working">
+    <h1 class="working-top">Enduring, this is the University Life</h1>
+    <h1 class="working-bot">unseen.</h1>
 
-    <!-- Awards Section -->
-    <section class="awards-section  justify-content-center" id="awards">
-      <h1 class="awards-top">Fueled by hope, driven by grit;</h1>
-      <h1 class="awards-bot">this Iska never settled.</h1>
-
-      <!-- New Row -->
-      <div class="row award-row mt-5 ">
-        <div class="award-col col-md-4">
-          <img src="./assets/1st-pl.jpg" class="img-fluid rounded shadow award-pic" alt="Award 1" />
-          <h1 class="awards-caption">AY 22-23</h1>
-        </div>
-
-        <div class="award-col col-md-4">
-          <img src="./assets/2nd-pl.jpg" class="img-fluid rounded shadow award-pic" alt="Award 1" />
-          <h1 class="awards-caption">AY 23-24</h1>
-        </div>
-
-        <div class="award-col col-md-4">
-          <img src="./assets/3rd-pl.jpg" class="img-fluid rounded shadow award-pic" alt="Award 1" />
-          <h1 class="awards-caption">AY 24-25</h1>
-        </div>
+    <!-- New Section -->
+    <div class="row mt-5 mb-5 gx-3">
+      <!-- Top row with 3 images -->
+      <div class="col-md-4 mb-3">
+        <img src="assets/working2.jpg" class="img-fluid rounded shadow" alt="Image 1" />
+      </div>
+      <div class="col-md-4 mb-3">
+        <video class="w-100 rounded shadow" autoplay muted loop playsinline style="height: 510px; object-fit: cover;">
+          <source src="assets/working6.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="assets/working4.jpg" class="img-fluid rounded shadow" alt="Image 3" />
       </div>
 
-      <div class="row award-row mt-5 mb-5">
-        <div class="award-col col-md-4">
-          <img src="./assets/award1.jpg" class="img-fluid rounded shadow award-pic" alt="Award 1" />
-          <h1 class="awards-caption">Gabay: NSTP Student Orientation</h1>
-        </div>
+      <!-- Bottom row with full-width video -->
+      <div class="col-12">
+        <img src="assets/working3.jpg" class="img-fluid rounded shadow" alt="Image 3" />
+      </div>
+    </div>
 
-        <div class="award-col col-md-4">
-          <img src="./assets/award2.jpg" class="img-fluid rounded shadow award-pic" alt="Award 1" />
-          <h1 class="awards-caption">PUP College Admission</h1>
-        </div>
+  </section>
 
-        <div class="award-col col-md-4">
-          <img src="./assets/award3.jpg" class="img-fluid rounded shadow award-pic" alt="Award 1" />
-          <h1 class="awards-caption">KLIMAlasakit Webinar</h1>
-        </div>
+  <!-- Awards Section -->
+  <section class="awards-section  justify-content-center" id="awards">
+    <h1 class="awards-top">Fueled by hope, driven by grit;</h1>
+    <h1 class="awards-bot">this Iska never settled.</h1>
+
+    <!-- New Row -->
+    <div class="row award-row mt-5 ">
+      <div class="award-col col-md-4">
+        <img src="./assets/1st-pl.jpg" class="img-fluid rounded shadow award-pic" alt="Award 1" />
+        <h1 class="awards-caption">AY 22-23</h1>
       </div>
 
-      
-    </section>
-
-    <footer>
-      <div class="footer-container text-center py-4">
-        <p class="mb-0">© 2025 Hazel Anne Miranda. All rights reserved.</p>
-        <div class="social-icons mt-2">
-          <a href="https://www.facebook.com/hzzh.1626" class="text-white me-3"><i class="fab fa-facebook"></i></a>
-          <a href="https://x.com/eizhelprivv" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com/heizeee_m/" class="text-white"><i class="fab fa-instagram"></i></a>
-        </div>
+      <div class="award-col col-md-4">
+        <img src="./assets/2nd-pl.jpg" class="img-fluid rounded shadow award-pic" alt="Award 1" />
+        <h1 class="awards-caption">AY 23-24</h1>
       </div>
-    </footer>
+
+      <div class="award-col col-md-4">
+        <img src="./assets/3rd-pl.jpg" class="img-fluid rounded shadow award-pic" alt="Award 1" />
+        <h1 class="awards-caption">AY 24-25</h1>
+      </div>
+    </div>
+
+    <div class="row award-row mt-5 mb-5">
+      <div class="award-col col-md-4">
+        <img src="./assets/award1.jpg" class="img-fluid rounded shadow award-pic" alt="Award 1" />
+        <h1 class="awards-caption">Gabay: NSTP Student Orientation</h1>
+      </div>
+
+      <div class="award-col col-md-4">
+        <img src="./assets/award2.jpg" class="img-fluid rounded shadow award-pic" alt="Award 1" />
+        <h1 class="awards-caption">PUP College Admission</h1>
+      </div>
+
+      <div class="award-col col-md-4">
+        <img src="./assets/award3.jpg" class="img-fluid rounded shadow award-pic" alt="Award 1" />
+        <h1 class="awards-caption">KLIMAlasakit Webinar</h1>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- Awards Section -->
+  <section class="awards-section  justify-content-center" id="prof">
+    <h1 class="awards-top">Not superheroes. Not saviors—</h1>
+    <h1 class="prof-bot">Iska inspired by minds that matter.</h1>
+
+    <!-- New Row -->
+    <div class="row award-row mt-5 ">
+      <div class="prof-col col-md-6">
+        <img src="./assets/prof1.jpg" class="img-fluid rounded shadow prof-pic" alt="Award 1" />
+        <h1 class="prof-name">Mx. John Paolo Sarce</h1>
+        <h1 class="prof-caption">In a strange twist of irony, I, a self-confessed English major who doesn’t enjoy
+          reading, found my voice in his class. He was the first to recognize the depth of my thoughts during an oral
+          exam, and in that moment, I began to believe I had something worth saying. More than just a teacher, he became
+          a mirror reflecting the version of myself I hadn’t yet discovered: someone capable of inspiring others.
+          Through his guidance, I learned that literature is not just about stories on a page, but about the truths we
+          dare to uncover, the questions we ask, and the courage to pass that fire on. He taught me that being an
+          educator means not only teaching content, but also igniting conviction; and that is the kind of teacher I hope
+          to become.</h1>
+      </div>
+
+      <div class="prof-col col-md-6">
+        <img src="./assets/prof2.jpg" class="img-fluid rounded shadow prof-pic" alt="Award 1" />
+        <h1 class="prof-name">Dr. Ma. Junithesmer Rosales</h1>
+        <h1 class="prof-caption">In a strange twist of irony, I, a self-confessed English major who doesn’t enjoy
+          reading, found my voice in his class. He was the first to recognize the depth of my thoughts during an oral
+          exam, and in that moment, I began to believe I had something worth saying. More than just a teacher, he became
+          a mirror reflecting the version of myself I hadn’t yet discovered: someone capable of inspiring others.
+          Through his guidance, I learned that literature is not just about stories on a page, but about the truths we
+          dare to uncover, the questions we ask, and the courage to pass that fire on. He taught me that being an
+          educator means not only teaching content, but also igniting conviction; and that is the kind of teacher I hope
+          to become.</h1>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+<!-- Narrative Section -->
+<section class="awards-section  justify-content-center" id="story">
+  <h1 class="awards-top">Unfiltered. Non-Fictional.</h1>
+    <h1 class="prof-bot">This is the truth of an Iska</h1>
+  <section class="card-section">
     
+    <div class="card-container">
+      <div class="card active" id="card-1">
+        <p>
+          This portfolio is not just a compilation of accomplishments—it is a map of survival, surrender, and
+          self-discovery. It tells the story of someone who once believed they were a big fish in a small pond—until the
+          gates of PUP opened, and the waters widened.
+        </p>
+        <div class="btn-container">
+          <button class="prev-btn" onclick="swipeCard('prev')">Prev</button>
+          <button class="next-btn" onclick="swipeCard('next')">Next</button>
+        </div>
+      </div>
+      <div class="card" id="card-2">
+        <p>
+          When I stepped into the Polytechnic University of the Philippines, I carried the confidence of someone who had
+          always done well, who was often praised, who believed she was ready. But PUP was not a pond—it was an ocean.
+          And in that ocean swam minds so sharp, spirits so resilient, and stories so profound that I suddenly
+          questioned my place in it all. I was no longer the big fish. I was barely swimming.
+        </p>
+        <div class="btn-container">
+          <button class="prev-btn" onclick="swipeCard('prev')">Prev</button>
+          <button class="next-btn" onclick="swipeCard('next')">Next</button>
+        </div>
+      </div>
+      <div class="card" id="card-3">
+        <p>
+          It’s humbling to meet brilliance. It’s painful to realize you’re not the smartest in the room. But it’s also
+          freeing. Because in that space of doubt, I began to rebuild—not to compete, but to contribute. I learned to
+          anchor my worth not in how I compared, but in how I continued.
+        </p>
+        <div class="btn-container">
+          <button class="prev-btn" onclick="swipeCard('prev')">Prev</button>
+          <button class="next-btn" onclick="swipeCard('next')">Next</button>
+        </div>
+      </div>
+      <div class="card" id="card-4">
+        <p>
+          Balancing work and study isn’t poetic. It’s exhausting. It means deadlines in the middle of shifts, lectures
+          in the middle of sleep, and tears no one sees. There were days when I thought, If I just had more—more time,
+          more money, more rest—how far could I go? I don’t know the answer. But I do know that even with less, I kept
+          going.
+        </p>
+        <div class="btn-container">
+          <button class="prev-btn" onclick="swipeCard('prev')">Prev</button>
+          <button class="next-btn" onclick="swipeCard('next')">Next</button>
+        </div>
+      </div>
+      <div class="card" id="card-5">
+        <p>
+          I chose PUP not because it was easy, but because it was honest. It reflected the kind of teacher I want to
+          become: grounded, resourceful, and in touch with reality. I didn’t choose teaching because it was glamorous. I
+          chose it because I believe in its power to heal, to shape, to liberate. And even though my current job offers
+          better pay, quicker success, and a clearer path, something in me aches for the classroom. For the chance to
+          stand before students who are just as lost, just as hopeful, just as brave as I was.
+        </p>
+        <div class="btn-container">
+          <button class="prev-btn" onclick="swipeCard('prev')">Prev</button>
+          <button class="next-btn" onclick="swipeCard('next')">Next</button>
+        </div>
+      </div>
+      <div class="card" id="card-6">
+        <p>My greatest dilemma is choosing between stability and significance. But I remind myself: I did not come this
+          far to live a life that doesn’t align with my purpose.
+          <br>
+          So here I am—still swimming. Not the biggest fish. Not the fastest. But perhaps the one who refuses to stop,
+          even when the tide rises.
+        </p>
+        <div class="btn-container">
+          <button class="prev-btn" onclick="swipeCard('prev')">Prev</button>
+          <button class="next-btn" onclick="swipeCard('next')">Next</button>
+        </div>
+      </div>
+      <div class="card" id="card-7" style="text-align: center;">
+        <p><br>This is not a success story.<br>
+          This is a becoming.<br>
+          The truth of an ordinary Iska.
+        </p>
+        <div class="btn-container">
+          <button class="prev-btn" onclick="swipeCard('prev')">Prev</button>
+          <button class="next-btn" onclick="swipeCard('next')">Next</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
 
-    <!-- Bootstrap JS (Optional if you have dropdowns, modals, etc.) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      window.addEventListener('scroll', function () {
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 10) {
-          navbar.classList.add('navbar-shadow');
-        } else {
-          navbar.classList.remove('navbar-shadow');
-        }
-      });
-    </script>
-  </body>
+
+
+
+
+
+  <footer>
+    <div class="footer-container text-center py-4">
+      <p class="mb-0">© 2025 Hazel Anne Miranda. All rights reserved.</p>
+      <div class="social-icons mt-2">
+        <a href="https://www.facebook.com/hzzh.1626" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+        <a href="https://x.com/eizhelprivv" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/heizeee_m/" class="text-white"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS (Optional if you have dropdowns, modals, etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    let currentIndex = 1;
+    const totalCards = 7; // Total number of cards
+
+    function swipeCard(direction) {
+      const currentCard = document.getElementById(`card-${currentIndex}`);
+      if (direction === 'next') {
+        // Move to next card
+        currentIndex = currentIndex === totalCards ? 1 : currentIndex + 1;
+      } else {
+        // Move to previous card
+        currentIndex = currentIndex === 1 ? totalCards : currentIndex - 1;
+      }
+
+      const nextCard = document.getElementById(`card-${currentIndex}`);
+
+      // Reset all cards
+      const allCards = document.querySelectorAll('.card');
+      allCards.forEach(card => card.classList.remove('active', 'next', 'prev'));
+
+      // Add classes for active, next, and prev states
+      nextCard.classList.add('active');
+      currentCard.classList.add(direction === 'next' ? 'prev' : 'next');
+    }
+
+    // Get all nav link elements
+// Get all nav link elements
+const navLinks = document.querySelectorAll('.nav-opt');
+
+// Get the home/logo element
+const homeLink = document.querySelector('a[href="#home"]');
+
+// Add click event listeners to each nav link
+navLinks.forEach(link => {
+  link.addEventListener('click', function () {
+    // Remove 'active' class from all links when any other link is clicked
+    navLinks.forEach(item => item.classList.remove('active'));
+
+    // Add 'active' class to the clicked link
+    this.classList.add('active');
+  });
+});
+
+// Handle the home/logo link separately
+homeLink.addEventListener('click', function(event) {
+  // Remove the 'active' class from all nav links
+  navLinks.forEach(item => item.classList.remove('active'));
+
+  // Manually scroll to the top of the page
+  document.querySelector('#home').scrollIntoView({ behavior: 'smooth' });
+
+  // If you want to scroll directly to top without smooth scrolling:
+  // window.scrollTo(0, 0);
+});
+
+
+  </script>
+
+</body>
+
 </html>
